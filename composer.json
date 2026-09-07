@@ -1,0 +1,28 @@
+{
+  "name": "remita/craft-remita-payment",
+  "description": "Accept payments via Remita in Craft Commerce",
+  "type": "craft-plugin",
+  "require": {
+    "php": "^8.1.0",
+    "craftcms/cms": "^4.0.0|^5.0.0",
+    "craftcms/commerce": "^4.0.0|^5.0.0",
+    "guzzlehttp/guzzle": "^7.0.0"
+  },
+  "authors": [
+    {
+      "name": "3akare",
+      "email": "bakare@remita.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "remita\\craftremitapayment\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "remita-payment",
+    "name": "Remita CraftCMS",
+    "developer": "Remita",
+    "schemaVersion": "1.0.0"
+  }
+}

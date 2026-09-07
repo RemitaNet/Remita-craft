@@ -1,0 +1,21 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.passwordField({
+    label: "Secret Key"|t('commerce'),
+    instructions: "Enter your Remita API Secret Key."|t('commerce'),
+    id: 'secretKey',
+    name: 'secretKey',
+    value: gateway.secretKey,
+    errors: gateway.getErrors('secretKey'),
+    required: true
+}) }}
+
+{{ forms.textField({
+    label: "Base URL"|t('commerce'),
+    instructions: "Enter your testing URL (e.g. ngrok) or production URL."|t('commerce'),
+    id: 'baseUrl',
+    name: 'baseUrl',
+    value: gateway.baseUrl,
+    errors: gateway.getErrors('baseUrl'),
+    required: true
+}) }}
